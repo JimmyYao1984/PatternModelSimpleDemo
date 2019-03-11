@@ -44,18 +44,18 @@ public class BikeManager extends BikeStuff{
 	}
 
 	public void remove(BikeStuff stuff){
-       	members.remove(stuff);
-    }
+       		members.remove(stuff);
+    	}
 
 	public void report(){
 		System.out.println(this.name + "负责" + this.region + "的管理和运营");
-        for(BikeStuff stuff : members){
-            if(this.level != null){
-                for(int  i = 0; i < this.level; i++){
-                    System.out.print("  ");
-                }
-            }
-            stuff.report();
+        	for(BikeStuff stuff : members){
+            		if(this.level != null){
+                	for(int  i = 0; i < this.level; i++){
+                    		System.out.print("  ");
+                	}
+            	}
+            	stuff.report();
         }
     }
 }
