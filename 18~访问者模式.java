@@ -6,7 +6,7 @@ public abstract class Bike{
 public Mobike extends Bike{
 	@Override
 	public void accept(IVisitor visitor){
-		visitor.visitor(this);
+		visitor.visit(this);
 	}
 }
 
