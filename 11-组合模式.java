@@ -8,12 +8,12 @@ public abstract class BikeStuff{
 	}
 
 	public void remove(BikeStuff stuff){
-        throw new UnsupportedOperationException("不支持删除操作");
-    }
+        	throw new UnsupportedOperationException("不支持删除操作");
+    	}
 
 	public void report(){
-        throw new UnsupportedOperationException("不支持汇报操作");
-    }
+        	throw new UnsupportedOperationException("不支持汇报操作");
+    	}
 }
 
 //修理人员
