@@ -51,9 +51,9 @@ public class BikeRepairFactory{
 }
 
 public static void main(Stirng[] args){
-	BikeComponent badBrakeCommponent = new Brake();
-	BikeRepairFactory.repair(badComponent);
+	BikeComponent badBrakeComponent = new Brake();
+	BikeRepairFactory.repair(badBrakeComponent);
 
 	BikeComponent badBrakeCommponent2 = new Brake();
-	BikeRepairFactory.repair(badComponent);
+	BikeRepairFactory.repair(badBrakeCommponent2);
 }
