@@ -41,15 +41,15 @@ public class Bike{
 	private BlackListService blackListService = new BlackListService();
 
 	public void drive(Account account){
-		if(!registerService.hasRegistered()){
+		if(!registerService.hasRegistered(account)){
 			System.out.println("你的账户还没有注册，不能骑");
 			return;
 		}
-		if(!depositService.hasDeposited()){
+		if(!depositService.hasDeposited(account)){
 			System.out.println("你的账户还没有交押金，不能骑");
 			return;
 		}
-		if(blackListService.hasOnBlackList()){
+		if(blackListService.hasOnBlackList(account)){
 			System.out.println("你是个黑户，不能骑");
 			return;
 		}
